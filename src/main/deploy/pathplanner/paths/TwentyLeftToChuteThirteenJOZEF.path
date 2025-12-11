@@ -1,0 +1,92 @@
+{
+  "version": "2025.0",
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 5.25820707070707,
+        "y": 5.044901315789473
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 4.628030303030303,
+        "y": 6.718497474747474
+      },
+      "isLocked": false,
+      "linkedName": "TwentyLeft"
+    },
+    {
+      "anchor": {
+        "x": 1.4364898989898987,
+        "y": 7.460479797979798
+      },
+      "prevControl": {
+        "x": 3.1542297979797995,
+        "y": 6.769318181818181
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": "ChuteThirteen"
+    }
+  ],
+  "rotationTargets": [
+    {
+      "waypointRelativePos": 0.5912280701754463,
+      "rotationDegrees": -51.12376624069719
+    }
+  ],
+  "constraintZones": [
+    {
+      "name": "Constraints Zone",
+      "minWaypointRelativePos": 0.0,
+      "maxWaypointRelativePos": 0.0,
+      "constraints": {
+        "maxVelocity": 3.0,
+        "maxAcceleration": 1.5,
+        "maxAngularVelocity": 540.0,
+        "maxAngularAcceleration": 720.0,
+        "nominalVoltage": 12.0,
+        "unlimited": false
+      }
+    }
+  ],
+  "pointTowardsZones": [],
+  "eventMarkers": [
+    {
+      "name": "CL4BufferToHome",
+      "waypointRelativePos": 0.14839424141749744,
+      "endWaypointRelativePos": null,
+      "command": null
+    },
+    {
+      "name": "HomeToChute",
+      "waypointRelativePos": 0.5027685492801818,
+      "endWaypointRelativePos": null,
+      "command": null
+    },
+    {
+      "name": "Intake",
+      "waypointRelativePos": 0.8017718715393166,
+      "endWaypointRelativePos": null,
+      "command": null
+    }
+  ],
+  "globalConstraints": {
+    "maxVelocity": 3.0,
+    "maxAcceleration": 1.75,
+    "maxAngularVelocity": 540.0,
+    "maxAngularAcceleration": 720.0,
+    "nominalVoltage": 12.0,
+    "unlimited": false
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": -51.70983680775695
+  },
+  "reversed": false,
+  "folder": null,
+  "idealStartingState": {
+    "velocity": 0,
+    "rotation": -119.99999999999999
+  },
+  "useDefaultConstraints": false
+}

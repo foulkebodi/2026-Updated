@@ -1,0 +1,168 @@
+{
+  "version": "2025.0",
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "named",
+          "data": {
+            "name": "GroundToHome"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "WinchOut"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "BlueInsideToTwentyLeft"
+          }
+        },
+        {
+          "type": "sequential",
+          "data": {
+            "commands": [
+              {
+                "type": "named",
+                "data": {
+                  "name": "CL4ToBuffer"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "parallel",
+          "data": {
+            "commands": [
+              {
+                "type": "path",
+                "data": {
+                  "pathName": "TwentyLeftToChuteThirteenJOZEF"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "CL4BufferToHome"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "sequential",
+          "data": {
+            "commands": [
+              {
+                "type": "named",
+                "data": {
+                  "name": "HomeToChute"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "CheckBeamBreak"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "ChuteToHome"
+                }
+              },
+              {
+                "type": "path",
+                "data": {
+                  "pathName": "ChuteThirteenToNineteenRightJOZEF"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "HomeToCL4"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "CL4ToBuffer"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "parallel",
+          "data": {
+            "commands": [
+              {
+                "type": "path",
+                "data": {
+                  "pathName": "NineteenRightToChuteThirteenJOZEF"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "CL4BufferToHome"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "sequential",
+          "data": {
+            "commands": [
+              {
+                "type": "named",
+                "data": {
+                  "name": "HomeToChute"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "CheckBeamBreak"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "ChuteToHome"
+                }
+              },
+              {
+                "type": "path",
+                "data": {
+                  "pathName": "ChuteThirteenToNineteenLeftJOZEF"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "HomeToCL4"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "CL4ToBuffer"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "resetOdom": true,
+  "folder": null,
+  "choreoAuto": false
+}

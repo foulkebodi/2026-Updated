@@ -1,0 +1,80 @@
+{
+  "version": "2025.0",
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 1.558459595959596,
+        "y": 5.600441919191919
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 2.498563438516797,
+        "y": 5.113897280208642
+      },
+      "isLocked": false,
+      "linkedName": "BlueLollipop"
+    },
+    {
+      "anchor": {
+        "x": 3.9775252525252522,
+        "y": 5.24469696969697
+      },
+      "prevControl": {
+        "x": 2.672471851984529,
+        "y": 5.19897808316153
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": "NineteenLeft"
+    }
+  ],
+  "rotationTargets": [],
+  "constraintZones": [
+    {
+      "name": "Constraints Zone",
+      "minWaypointRelativePos": 0.8502673796791442,
+      "maxWaypointRelativePos": 1.0,
+      "constraints": {
+        "maxVelocity": 5.0,
+        "maxAcceleration": 1.0,
+        "maxAngularVelocity": 540.0,
+        "maxAngularAcceleration": 720.0,
+        "nominalVoltage": 12.0,
+        "unlimited": false
+      }
+    }
+  ],
+  "pointTowardsZones": [],
+  "eventMarkers": [
+    {
+      "name": "HomeToCL4",
+      "waypointRelativePos": 0.8489304812834242,
+      "endWaypointRelativePos": null,
+      "command": {
+        "type": "named",
+        "data": {
+          "name": "HomeToCL4"
+        }
+      }
+    }
+  ],
+  "globalConstraints": {
+    "maxVelocity": 3.0,
+    "maxAcceleration": 1.25,
+    "maxAngularVelocity": 540.0,
+    "maxAngularAcceleration": 720.0,
+    "nominalVoltage": 12.0,
+    "unlimited": false
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": -59.99999999999999
+  },
+  "reversed": false,
+  "folder": "TwoPieceLeftPaths",
+  "idealStartingState": {
+    "velocity": 0,
+    "rotation": 180.0
+  },
+  "useDefaultConstraints": true
+}

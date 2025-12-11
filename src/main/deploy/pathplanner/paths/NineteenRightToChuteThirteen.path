@@ -1,0 +1,73 @@
+{
+  "version": "2025.0",
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 3.692929292929293,
+        "y": 5.082070707070707
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 3.504865002967323,
+        "y": 5.290525674259836
+      },
+      "isLocked": false,
+      "linkedName": "NineteenRight"
+    },
+    {
+      "anchor": {
+        "x": 1.4364898989898987,
+        "y": 7.460479797979798
+      },
+      "prevControl": {
+        "x": 2.1057275784738785,
+        "y": 6.819755382253159
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": "ChuteThirteen"
+    }
+  ],
+  "rotationTargets": [],
+  "constraintZones": [],
+  "pointTowardsZones": [],
+  "eventMarkers": [
+    {
+      "name": "CL4BufferToHome",
+      "waypointRelativePos": 0.19712070874861387,
+      "endWaypointRelativePos": null,
+      "command": null
+    },
+    {
+      "name": "HomeToChute",
+      "waypointRelativePos": 0.604651162790693,
+      "endWaypointRelativePos": null,
+      "command": null
+    },
+    {
+      "name": "Intake",
+      "waypointRelativePos": 0.797342192691036,
+      "endWaypointRelativePos": null,
+      "command": null
+    }
+  ],
+  "globalConstraints": {
+    "maxVelocity": 3.0,
+    "maxAcceleration": 1.25,
+    "maxAngularVelocity": 540.0,
+    "maxAngularAcceleration": 720.0,
+    "nominalVoltage": 12.0,
+    "unlimited": false
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": -51.70983680775695
+  },
+  "reversed": false,
+  "folder": "TwoPieceLeftPaths",
+  "idealStartingState": {
+    "velocity": 0,
+    "rotation": -59.826479970355734
+  },
+  "useDefaultConstraints": true
+}

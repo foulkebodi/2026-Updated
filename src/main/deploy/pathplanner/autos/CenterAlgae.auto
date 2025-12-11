@@ -1,0 +1,103 @@
+{
+  "version": "2025.0",
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "path",
+          "data": {
+            "pathName": "SecondPick1"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "CL4ToBuffer"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "SecondPick2"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Idle"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "CL4ToAL2"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "SecondPick3"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Idle"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "SecondPick4"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "AL2ToHome"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "HomeToBarge"
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 1.0
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Outtake"
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 1.0
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "CL4ToHome"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "SecondPick5"
+          }
+        }
+      ]
+    }
+  },
+  "resetOdom": true,
+  "folder": null,
+  "choreoAuto": false
+}

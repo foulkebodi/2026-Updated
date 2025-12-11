@@ -1,0 +1,87 @@
+{
+  "version": "2025.0",
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 1.4364898989898987,
+        "y": 7.460479797979798
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 2.074764068818175,
+        "y": 7.0181600840349345
+      },
+      "isLocked": false,
+      "linkedName": "ChuteThirteen"
+    },
+    {
+      "anchor": {
+        "x": 3.9775252525252522,
+        "y": 5.24469696969697
+      },
+      "prevControl": {
+        "x": 3.55875,
+        "y": 5.75075
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": "NineteenLeft"
+    }
+  ],
+  "rotationTargets": [],
+  "constraintZones": [
+    {
+      "name": "Constraints Zone",
+      "minWaypointRelativePos": 0.7982014388489208,
+      "maxWaypointRelativePos": 1.0,
+      "constraints": {
+        "maxVelocity": 1.0,
+        "maxAcceleration": 1.75,
+        "maxAngularVelocity": 540.0,
+        "maxAngularAcceleration": 720.0,
+        "nominalVoltage": 12.0,
+        "unlimited": false
+      }
+    }
+  ],
+  "pointTowardsZones": [],
+  "eventMarkers": [
+    {
+      "name": "ChuteToHome",
+      "waypointRelativePos": 0.24584717607973494,
+      "endWaypointRelativePos": null,
+      "command": null
+    },
+    {
+      "name": "Idle",
+      "waypointRelativePos": 0.4008859357696513,
+      "endWaypointRelativePos": null,
+      "command": null
+    },
+    {
+      "name": "HomeToCL4",
+      "waypointRelativePos": 0.7021040974529262,
+      "endWaypointRelativePos": null,
+      "command": null
+    }
+  ],
+  "globalConstraints": {
+    "maxVelocity": 2.5,
+    "maxAcceleration": 1.4,
+    "maxAngularVelocity": 540.0,
+    "maxAngularAcceleration": 720.0,
+    "nominalVoltage": 12.0,
+    "unlimited": false
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": -59.99999999999999
+  },
+  "reversed": false,
+  "folder": null,
+  "idealStartingState": {
+    "velocity": 0,
+    "rotation": -51.70983680775695
+  },
+  "useDefaultConstraints": false
+}

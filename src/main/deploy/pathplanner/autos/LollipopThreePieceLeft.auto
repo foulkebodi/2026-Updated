@@ -1,0 +1,97 @@
+{
+  "version": "2025.0",
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "named",
+          "data": {
+            "name": "GroundToHome"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "WinchOut"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "BlueInsideToTwentyLeft"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "CL4ToHome"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "TwentyLeftToBlueLollipop"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "GroundToHome"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Idle"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "BlueLollipopToNineteenLeft"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "CL4ToHome"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "NineteenLeftToMiddleLollipop"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "GroundToHome"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Idle"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "MiddleLollipopToNineteenRight"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "CL4ToHome"
+          }
+        }
+      ]
+    }
+  },
+  "resetOdom": true,
+  "folder": null,
+  "choreoAuto": false
+}

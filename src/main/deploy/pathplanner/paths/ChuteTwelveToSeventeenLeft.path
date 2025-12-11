@@ -1,0 +1,71 @@
+{
+  "version": "2025.0",
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 1.2508223684210527,
+        "y": 0.9652960526315791
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 1.672864918410512,
+        "y": 1.3919843742428442
+      },
+      "isLocked": false,
+      "linkedName": "ChuteTwelve"
+    },
+    {
+      "anchor": {
+        "x": 3.7236019736842105,
+        "y": 2.9762335526315784
+      },
+      "prevControl": {
+        "x": 3.5094993448006306,
+        "y": 2.7599457088229067
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": "SeventeenLeft"
+    }
+  ],
+  "rotationTargets": [
+    {
+      "waypointRelativePos": 0.6996855345911962,
+      "rotationDegrees": 59.99999999999999
+    }
+  ],
+  "constraintZones": [],
+  "pointTowardsZones": [],
+  "eventMarkers": [
+    {
+      "name": "HomeToCL4",
+      "waypointRelativePos": 0.7504488330341106,
+      "endWaypointRelativePos": null,
+      "command": {
+        "type": "named",
+        "data": {
+          "name": "HomeToCL4"
+        }
+      }
+    }
+  ],
+  "globalConstraints": {
+    "maxVelocity": 3.0,
+    "maxAcceleration": 1.25,
+    "maxAngularVelocity": 540.0,
+    "maxAngularAcceleration": 720.0,
+    "nominalVoltage": 12.0,
+    "unlimited": false
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": 59.99999999999999
+  },
+  "reversed": false,
+  "folder": "TwoPieceRightPaths",
+  "idealStartingState": {
+    "velocity": 0,
+    "rotation": 55.0
+  },
+  "useDefaultConstraints": true
+}
