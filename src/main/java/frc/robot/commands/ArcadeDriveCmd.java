@@ -85,14 +85,14 @@ public class ArcadeDriveCmd extends Command {
         if(DriverStation.getAlliance().isPresent() && DriverStation.getAlliance().get() == Alliance.Red) {
             swerve.driveFieldRelative(
                 drive * SwerveDriveConstants.maxAttainableSpeedMetersPerSec,
-                strafe * SwerveDriveConstants.maxAttainableRotationRadPerSec,
+                strafe * SwerveDriveConstants.maxAttainableSpeedMetersPerSec,
                 -rot * SwerveDriveConstants.maxAttainableRotationRadPerSec,
                 poseEstimator.get().getRotation()
             );
         } else {
             swerve.driveFieldRelative(
                 -drive * SwerveDriveConstants.maxAttainableSpeedMetersPerSec,
-                -strafe * SwerveDriveConstants.maxAttainableRotationRadPerSec,
+                -strafe * SwerveDriveConstants.maxAttainableSpeedMetersPerSec,
                 -rot * SwerveDriveConstants.maxAttainableRotationRadPerSec,
                 poseEstimator.get().getRotation()
             );

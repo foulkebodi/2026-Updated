@@ -100,7 +100,6 @@ public class SwerveDrive extends SubsystemBase {
                 this
             )
         );
-
     }
 
     // sysID command factories

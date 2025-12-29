@@ -6,33 +6,17 @@ package frc.robot;
 
 import frc.robot.Constants.ControllerConstants;
 import frc.robot.Constants.SwerveDriveConstants;
-import frc.robot.Constants.SwerveModuleConstants;
 import frc.robot.commands.ArcadeDriveCmd;
 import frc.robot.commands.LockCmd;
 import frc.robot.commands.util.ExampleCommand;
 import frc.robot.subsystems.drive.PoseEstimator;
 import frc.robot.subsystems.drive.SwerveDrive;
 
-import java.util.List;
-
 import edu.wpi.first.math.MathUtil;
-import edu.wpi.first.math.geometry.Pose2d;
-import edu.wpi.first.math.geometry.Rotation2d;
-import edu.wpi.first.wpilibj.DriverStation;
 import edu.wpi.first.wpilibj.XboxController;
-import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.wpilibj2.command.Command;
-import edu.wpi.first.wpilibj2.command.CommandScheduler;
-import edu.wpi.first.wpilibj2.command.Commands;
-import edu.wpi.first.wpilibj2.command.InstantCommand;
-import edu.wpi.first.wpilibj2.command.RunCommand;
-import edu.wpi.first.wpilibj2.command.ScheduleCommand;
-import edu.wpi.first.wpilibj2.command.SequentialCommandGroup;
 import edu.wpi.first.wpilibj2.command.button.CommandXboxController;
-import edu.wpi.first.wpilibj2.command.button.Trigger;
-
-@SuppressWarnings("unused")
 
 /**
  * This class is where the bulk of the robot should be declared. Since Command-based is a
@@ -96,7 +80,6 @@ public class RobotContainer {
 
 	
 	private void configureBindings() {
-			
 		// drive controls
 		swerveDrive.setDefaultCommand(new ArcadeDriveCmd(
 			() -> MathUtil.applyDeadband(driverController.getLeftY(), ControllerConstants.joystickDeadband),
@@ -115,7 +98,7 @@ public class RobotContainer {
 		driverController.x().onTrue(swerveDrive.sysIdQuasistaticForward());
 		driverController.y().onTrue(swerveDrive.sysIdQuasistaticReverse());
 
-		// example bindings
+		// example operator bindings
 		operatorController.a().onTrue(new ExampleCommand(null));
 	
 		operatorController.axisGreaterThan(XboxController.Axis.kRightTrigger.value, ControllerConstants.tiggerPressedThreshold)
