@@ -8,7 +8,6 @@ import frc.robot.Constants.ControllerConstants;
 import frc.robot.Constants.SwerveDriveConstants;
 import frc.robot.commands.ArcadeDriveCmd;
 import frc.robot.commands.LockCmd;
-import frc.robot.commands.util.ExampleCommand;
 import frc.robot.subsystems.drive.PoseEstimator;
 import frc.robot.subsystems.drive.SwerveDrive;
 
@@ -99,18 +98,16 @@ public class RobotContainer {
 		driverController.y().onTrue(swerveDrive.sysIdQuasistaticReverse());
 
 		// example operator bindings
-		// operatorController.a().onTrue(new ExampleCommand(null));
+		operatorController.a().onTrue(new Command() {});
 	
-		// operatorController.axisGreaterThan(XboxController.Axis.kRightTrigger.value, ControllerConstants.tiggerPressedThreshold)
-		// .onTrue(new ExampleCommand(null));
+		operatorController.axisGreaterThan(XboxController.Axis.kRightTrigger.value, ControllerConstants.tiggerPressedThreshold)
+		.onTrue(new Command() {});
 	}
 
 	public Command getAutonomousCommand() {
 		// return autoChooser.getSelected();
 		// return new ExampleCommand(null);
-		return new Command() {
-			
-		};
+		return new Command() {};
 	}
 
 	public void updateDashboard() {
