@@ -40,7 +40,7 @@ public final class Constants {
         public static final int kOperatorControllerPort = 1;
 
         // TODO: change deadband based on controller drift
-		public static final double joystickDeadband = 0.09;
+		public static final double joystickDeadband = 0.08;
         public static final double tiggerPressedThreshold = 0.35;
 	}
 
